@@ -37,7 +37,7 @@ A book catalog web app built with Python and Django. Users can register, log in,
 
 | Catalog | Book detail | Admin panel |
 |---------|-------------|-------------|
-| ![Catalog](./screenshots/bookstore_home.png) | ![Detail](./screenshots/book-detail.png) | ![Admin](./screenshots/bookstore_admin.png) |
+| ![Catalog](./screenshots/bookstore_home.png) | ![Detail](./screenshots/bookstore_detail.png) | ![Admin](./screenshots/bookstore_admin.png) |
 
 | Ownership permissions | REST API |
 |-----------------------|----------|
