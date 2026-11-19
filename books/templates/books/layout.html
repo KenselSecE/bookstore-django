@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bookstore</title>
+</head>
+<body>
+    <nav>
+    	<a href="{% url 'homepage' %}">Bookstore</a>
+
+    	{% if user.is_authenticated %}
+        	<a href="{% url 'add_book' %}">Add Book</a>
+        	<a href="{% url 'logout' %}">Logout</a>
+        	<span>Hello, {{ user.username }}</span>
+    	{% else %}
+        	<a href="{% url 'register' %}">Register</a>
+        	<a href="{% url 'login' %}">Login</a>
+    	{% endif %}
+
+    	<a href="/api/">APIs</a>
+	</nav>
+
+    <hr>
+
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,14 @@
+{% extends 'books/layout.html' %}
+
+{% block content %}
+    <h1>{{ book.title }}</h1>
+    <p><strong>Author:</strong> {{ book.author }}</p>
+    <p><strong>Year:</strong> {{ book.year }}</p>
+    <p><strong>Rating:</strong> {{ book.rating }}</p>
+    <p><strong>Description:</strong> {{ book.description }}</p>
+
+    <a href="{% url 'edit_book' book.pk %}">Edit</a>
+    <a href="{% url 'delete_book' book.pk %}">Delete</a>
+    <br>
+    <a href="{% url 'homepage' %}">Back to homepage</a>
+{% endblock %}
